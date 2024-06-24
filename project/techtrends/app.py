@@ -4,10 +4,10 @@ from datetime import datetime
 from flask import Flask, jsonify, json, render_template, request, url_for, redirect, flash
 from werkzeug.exceptions import abort
 
-# Configure logging
+# Configure logging 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
-# Global variable to count database connections
+# Global variable to count database connections.
 db_connection_count = 0
 
 # Function to get a database connection.
